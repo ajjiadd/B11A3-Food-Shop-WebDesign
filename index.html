@@ -15,9 +15,12 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'hero-grd':'#EFEBE3',
+                        'hero-grd': '#EFEBE3',
                         'accent': '#179800',
-                        'dark':'#111111'
+                        'dark': '#111111',
+                        'dark2': '#545250',
+                        'secondary': '#EFEBE3',
+
                     },
                     fontFamily: {
                         'sora': ['Sora', 'sans-serif'],
@@ -102,20 +105,75 @@
         <section class="my-24">
             <div class="text-center space-y-8">
                 <h1 class="text-4xl md:text-6xl font-semibold">Freshness <span class="text-accent">You Can <br>
-                    Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-dark">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                        Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-dark">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+                    staples, we’ve got you covered every day!</p>
             </div>
             <!-- hero image  -->
             <div class="mt-9">
                 <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
             </div>
-            
+
         </section>
 
     </header>
 
     <!-- main section  -->
-    <main></main>
+    <main>
+        <!-- service section  -->
+        <section>
+            <!-- card container  -->
+            <div class="container mx-auto space-y-10">
+                <h1 class="text-4xl text-accent font-semibold">Services</h1>
+                <!-- card container  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- card 1  -->
+                    <div class="card bg-secondary text-primary-content">
+                        <div class="card-body text-center">
+                            <div class="card-actions justify-center mb-6">
+                                <div class="avatar bg-white p-6 rounded-full">
+                                    <div class="w-24 rounded-full">
+                                      <img src="./c2-assets/service.png" />
+                                    </div>
+                                  </div>
+                            </div>
+                            <h2 class="text-2xl font-semibold text-dark">24/7 Services</h2>
+                            <p class="text-dark2 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                    <!-- card 2  -->
+                    <div class="card bg-secondary text-primary-content">
+                        <div class="card-body text-center">
+                            <div class="card-actions justify-center mb-6">
+                                <div class="avatar bg-white p-6 rounded-full">
+                                    <div class="w-24 rounded-full">
+                                      <img src="./c2-assets/delivery.png" />
+                                    </div>
+                                  </div>
+                            </div>
+                            <h2 class="text-2xl font-semibold text-dark">Fast Delivery</h2>
+                            <p class="text-dark2 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                    <!-- card 3  -->
+                    <div class="card bg-secondary text-primary-content">
+                        <div class="card-body text-center">
+                            <div class="card-actions justify-center mb-6">
+                                <div class="avatar bg-white p-6 rounded-full">
+                                    <div class="w-24 rounded-full">
+                                      <img src="./c2-assets/healthy.png" />
+                                    </div>
+                                  </div>
+                            </div>
+                            <h2 class="text-2xl font-semibold text-dark">Healthy Products </h2>
+                            <p class="text-dark2 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <!-- footer section  -->
     <footer>
