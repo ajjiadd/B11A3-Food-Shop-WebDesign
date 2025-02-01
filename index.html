@@ -29,11 +29,36 @@
                     },
                     fontFamily: {
                         'sora': ['Sora', 'sans-serif'],
-                    }
-                }
+                    },
+                },
             }
         }
+
     </script>
+
+    <style>
+       
+        .animate-drop {
+            animation: drop-down 1.5s;
+        }
+
+        @keyframes drop-down {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            50% {
+                transform: translateY(20px);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 
 
 
@@ -45,13 +70,13 @@
     <!-- Boxicon icons  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Document</title>
+    <title>Nature's Platter | The best online Food shop</title>
 </head>
 
 <body class="font-sora">
     <!-- header section -->
     <header class="bg-gradient-to-t from-hero-grd">
-        <nav class="container mx-auto pt-6">
+        <nav class="container mx-auto py-6 border-b-2 lg:border-none border-accent">
             <div class="flex justify-between">
                 <div class="">
                     <a href="" class="">
@@ -114,22 +139,157 @@
         <!-- hero Section  -->
         <section class="my-24">
             <div class="text-center space-y-8">
-                <h1 class="text-4xl md:text-6xl font-semibold">Freshness <span class="text-accent">You Can <br>
+                <h1 class="text-4xl md:text-6xl font-semibold animate-drop">Freshness <span class="text-accent">You Can
+                        <br>
                         Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-dark">Experience the best of both worlds at NATURE's PLATTER. Fresh ingredients, sourced locally, at affordable prices. <br> Perfect for creating delicious meals without breaking the bank.</p>
+                <p class="text-dark animate-drop">Experience the best of both worlds at NATURE's PLATTER. Fresh ingredients, sourced
+                    locally, at affordable prices. <br> Perfect for creating delicious meals without breaking the bank.
+                </p>
             </div>
             <!-- hero image  -->
             <div class="mt-9">
-                <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+                <img class="mx-auto animate-drop " src="./c2-assets/hero-vegetables.png" alt="">
             </div>
 
         </section>
 
     </header>
 
+    <!-- Flash Sale Section -->
+    <section class="container mx-auto mb-44 px-3">
+        <h1 class="text-4xl text-accent font-semibold mb-9">Flash Sale! <i class='bx bxs-hot text-red-600'></i></h1>
+        <div class="card lg:card-side bg-base-100 shadow-xl bg-gradient-to-l from-secondary">
+            <figure class="lg:w-2/5">
+                <img class="" src="./c2-assets/flashSale.png" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="text-5xl font-semibold text-deep-green">Hurry! Tasty Deals Await You!</h2>
+                <p class="text-xl text-dark2">Enjoy delicious meals at unbeatable prices! </p>
+
+                <!-- group Card  -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+                    <!-- sm card 1  -->
+                    <div class="p-5 flex bg-gradient-to-r from-lime-300  rounded-xl items-center gap-5">
+                        <!-- image  -->
+                        <div class="w-20">
+                            <img src="./c2-assets/Onion.png" alt="">
+                        </div>
+                        <!-- content  -->
+                        <div class="">
+                            <div class="rating flex gap-3 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 text-base" />
+                                <span class="text-base">4.5</span>
+                            </div>
+                            <h1 class="text-xl font-semibold">Onion 1 KG</h1>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- sm card 2  -->
+                    <div class="p-5 flex bg-gradient-to-r from-lime-300 rounded-xl items-center gap-5">
+                        <!-- image  -->
+                        <div class="w-20">
+                            <img src="./c2-assets/alu.png" alt="">
+                        </div>
+                        <!-- content  -->
+                        <div class="">
+                            <div class="rating flex gap-3 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 text-base" />
+                                <span class="text-base">4.5</span>
+                            </div>
+                            <h1 class="text-xl font-semibold">Potato 1 KG</h1>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- sm card 3  -->
+                    <div class="p-5 flex bg-gradient-to-r from-lime-300 rounded-xl items-center gap-5">
+                        <!-- image  -->
+                        <div class="w-20">
+                            <img src="./c2-assets/tomato.png" alt="">
+                        </div>
+                        <!-- content  -->
+                        <div class="">
+                            <div class="rating flex gap-3 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 text-base" />
+                                <span class="text-base">4.5</span>
+                            </div>
+                            <h1 class="text-xl font-semibold">Tomato 500 g </h1>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- sm card 4  -->
+                    <div class="p-5 flex bg-gradient-to-r from-lime-300 rounded-xl items-center gap-5">
+                        <!-- image  -->
+                        <div class="w-20">
+                            <img src="./c2-assets/Onion.png" alt="">
+                        </div>
+                        <!-- content  -->
+                        <div class="">
+                            <div class="rating flex gap-3 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 text-base" />
+                                <span class="text-base">4.5</span>
+                            </div>
+                            <h1 class="text-xl font-semibold">Onion 1 KG</h1>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- sm card 5  -->
+                    <div class="p-5 flex bg-gradient-to-r from-lime-300 rounded-xl items-center gap-5">
+                        <!-- image  -->
+                        <div class="w-20">
+                            <img src="./c2-assets/alu.png" alt="">
+                        </div>
+                        <!-- content  -->
+                        <div class="">
+                            <div class="rating flex gap-3 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 text-base" />
+                                <span class="text-base">4.5</span>
+                            </div>
+                            <h1 class="text-xl font-semibold">Potato 1 KG</h1>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- sm card 6  -->
+                    <div class="p-5 flex bg-gradient-to-r from-lime-300 rounded-xl items-center gap-5">
+                        <!-- image  -->
+                        <div class="w-20">
+                            <img src="./c2-assets/tomato.png" alt="">
+                        </div>
+                        <!-- content  -->
+                        <div class="">
+                            <div class="rating flex gap-3 items-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 text-base" />
+                                <span class="text-base">4.5</span>
+                            </div>
+                            <h1 class="text-xl font-semibold">Tomato 500 g </h1>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- service section  -->
-    <section class="mb-44">
+    <section class="mb-44 px-3">
         <!-- card container  -->
         <div class="container mx-auto space-y-10">
             <h1 class="text-4xl text-accent font-semibold">Services</h1>
@@ -146,7 +306,8 @@
                             </div>
                         </div>
                         <h2 class="text-2xl font-semibold text-dark">24/7 Services</h2>
-                        <p class="text-dark2 text-xl">Our shop is open 24/7, so you can shop at your convenience. Whether you're a busy professional or a parent on-the-go, we've got you covered</p>
+                        <p class="text-dark2 text-xl">Our shop is open 24/7, so you can shop at your convenience.
+                            Whether you're a busy professional or a parent on-the-go, we've got you covered</p>
                     </div>
                 </div>
                 <!-- card 2  -->
@@ -160,7 +321,8 @@
                             </div>
                         </div>
                         <h2 class="text-2xl font-semibold text-dark">Fast Delivery</h2>
-                        <p class="text-dark2 text-xl">We offer fast and reliable delivery options, so you can get your groceries delivered right to your doorstep.</p>
+                        <p class="text-dark2 text-xl">We offer fast and reliable delivery options, so you can get your
+                            groceries delivered right to your doorstep.</p>
                     </div>
                 </div>
                 <!-- card 3  -->
@@ -174,7 +336,8 @@
                             </div>
                         </div>
                         <h2 class="text-2xl font-semibold text-dark">Healthy Products </h2>
-                        <p class="text-dark2 text-xl">We're committed to providing healthy and nutritious options for our customers. From organic produce to whole grain products, we've got you covered.</p>
+                        <p class="text-dark2 text-xl">We're committed to providing healthy and nutritious options for
+                            our customers. From organic produce to whole grain products, we've got you covered.</p>
                     </div>
                 </div>
             </div>
@@ -182,7 +345,7 @@
     </section>
 
     <!-- Popular Products  -->
-    <section class="bg-secondary">
+    <section class="bg-secondary px-3">
         <!-- content box -->
         <div class="container mx-auto py-36 space-y-10">
             <h1 class="text-4xl text-accent font-semibold">Popular Products</h1>
@@ -195,7 +358,8 @@
                     <div>
                         <div class="px-8 pt-9 pb-0 space-y-5">
                             <h2 class="text-3xl text-white font-medium">30% off</h2>
-                            <p class="text-dark text-base">Fresh and flavorful,perfect for cooking  and adding <br> flavor to your meals.</p>
+                            <p class="text-dark text-base">Fresh and flavorful,perfect for cooking and adding <br>
+                                flavor to your meals.</p>
                             <div class="card-actions justify-start">
                                 <button class="btn px-8 text-xl">Buy Now</button>
                             </div>
@@ -392,7 +556,7 @@
     </section>
 
     <!-- service section  -->
-    <section class="mb-44">
+    <section class="mb-44 px-3">
         <!-- card container  -->
         <div class="container mx-auto space-y-10 py-36">
             <h1 class="text-4xl text-accent font-semibold">Arrival & Offers</h1>
@@ -438,7 +602,8 @@
         <!-- one card section  -->
         <div class="container flex justify-center mx-auto">
 
-            <div class="mt-36 py-14 lg:px-48 gap-5 grid grid-cols-1 lg:grid-cols-2 bg-secondary rounded-3xl lg:absolute relative lg:-top-96 top-60">
+            <div
+                class="mt-36 py-14 lg:px-48 gap-5 grid grid-cols-1 lg:grid-cols-2 bg-secondary rounded-3xl lg:absolute relative lg:-top-96 top-60">
                 <!-- image section  -->
                 <div class="">
                     <img class="mx-auto max-w-56 lg:max-w-80" src="./c2-assets/vegetable-busket.png" alt="">
@@ -448,7 +613,8 @@
                     <h1 class=" text-3xl lg:text-5xl font-semibold text-accent lg:text-dark">Get Grocery News!</h1>
                     <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
                     <div class="">
-                        <input class="py-2 lg:py-5 px-6 w-4/5 lg:w-3/5 rounded-lg" type="text" placeholder="Enter email....">
+                        <input class="py-2 lg:py-5 px-6 w-4/5 lg:w-3/5 rounded-lg" type="text"
+                            placeholder="Enter email....">
                     </div>
                     <button class="btn btn-success text-xl py-2 px-8 text-white" type="submit">Subscribe</button>
                 </div>
@@ -466,7 +632,8 @@
                     <img src="./c2-assets/logo-footer.png" alt="">
                 </div>
                 <p class="text-xl">
-                    Your one-stop destination for high-quality food. <br> Our goal is to provide our customers with the<br>finest ingredients and exceptional service.
+                    Your one-stop destination for high-quality food. <br> Our goal is to provide our customers with
+                    the<br>finest ingredients and exceptional service.
                 </p>
             </aside>
 
